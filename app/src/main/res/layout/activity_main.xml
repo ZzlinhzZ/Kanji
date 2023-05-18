@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/abc"
+    tools:context=".MainActivity">
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:id="@+id/appbar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/edit_search"-->
+    <!--            android:layout_width="331dp"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:drawableLeft="@drawable/search"-->
+    <!--            android:drawablePadding="10dp"-->
+    <!--            android:hint="Search"-->
+    <!--            android:paddingLeft="5dp"-->
+    <!--            android:textColorHint="#9b9a9a"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/button7"-->
+    <!--            android:layout_width="50dp"-->
+    <!--            android:layout_height="61dp"-->
+    <!--            android:background="@drawable/star"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toEndOf="@+id/edit_search"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        &lt;!&ndash;                <com.google.android.material.appbar.MaterialToolbar&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:id="@+id/topAppBar"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            app:title="hello"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_height="?attr/actionBarSize" />&ndash;&gt;-->
+    <!--        &lt;!&ndash;            app:navigationIcon=""&ndash;&gt;-->
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/editTextTextPersonName3"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:ems="10"-->
+    <!--        android:inputType="textPersonName"-->
+    <!--        android:text="Name"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/appbar"-->
+    <!--        app:layout_constraintVertical_bias="0.502" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button6"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="7dp"-->
+    <!--        android:layout_marginEnd="24dp"-->
+    <!--        android:text="Button"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName3"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.499" />-->
+
+<!--    app:layout_constraintBottom_toTopOf="@+id/_dynamic"-->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="240dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:contentScrim="?attr/colorPrimary"
+            app:toolbarId="@+id/toolbar">
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/editText"-->
+            <!--                android:layout_width="296dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:ems="10"-->
+            <!--                android:inputType="textPersonName"-->
+            <!--                android:text="Name"-->
+            <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintHorizontal_bias="0.0"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toTopOf="@+id/appbar"-->
+            <!--                app:layout_constraintVertical_bias="0.502" />-->
+
+            <!--            <Button-->
+            <!--                android:id="@+id/button4"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_gravity="right"-->
+            <!--                android:text="Button" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!--                <EditText-->
+                <!--                    android:id="@+id/editText"-->
+                <!--                    android:layout_width="296dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:ems="10"-->
+                <!--                    android:inputType="textPersonName"-->
+                <!--                    android:text="Name"-->
+                <!--                    android:layout_marginLeft="10dp"-->
+                <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    app:layout_constraintHorizontal_bias="0.0"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    app:layout_constraintTop_toTopOf="@+id/appbar"-->
+                <!--                    app:layout_constraintVertical_bias="0.502" />-->
+
+                <SearchView
+                    android:id="@+id/idSV"
+                    android:layout_width="335dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btn_DSLike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@drawable/armystar" />
+
+            </LinearLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+<!--    <EditText-->
+<!--        android:id="@+id/edt_kanji"-->
+<!--        android:layout_width="301dp"-->
+<!--        android:layout_height="57dp"-->
+<!--        android:layout_marginTop="137dp"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:text="日"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/editText"-->
+<!--        android:layout_width="270dp"-->
+<!--        android:layout_height="67dp"-->
+<!--        android:layout_marginStart="6dp"-->
+<!--        android:layout_marginTop="28dp"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:text=""-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/edt_kanji"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/edt_kanji" />-->
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/appbar"
+        app:layout_constraintTop_toBottomOf="@+id/appbar">
+        <ListView
+            android:id="@+id/idLVkanji"
+            android:layout_width="match_parent"
+            android:layout_height="520dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_n4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appbar" />
+
+        <Button
+            android:id="@+id/btn_n4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Basic Kanji N4"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"
+            android:background="@drawable/textview_mean"/>
+        <Button
+            android:id="@+id/btn_n3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Basic Kanji N3"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"
+            android:background="@drawable/textview_mean"/>
+        <Button
+            android:id="@+id/btn_n2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Basic Kanji N2"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"
+            android:background="@drawable/textview_mean"/>
+        <Button
+            android:id="@+id/btn_n1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Basic Kanji N1"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"
+            android:background="@drawable/textview_mean"/>
+    </LinearLayout>
+
+
+    <!--    <GridView-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_marginStart="1dp"-->
+    <!--        android:layout_marginEnd="1dp"-->
+    <!--        android:layout_marginBottom="1dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/appbar" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>
